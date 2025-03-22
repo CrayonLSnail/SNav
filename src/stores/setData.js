@@ -7,7 +7,7 @@ const useSetDataStore = defineStore("setData", {
       themeType: "light",
       // 壁纸类别
       // 0 本地 / 1 必应 / 2 随机风景 / 3 随机动漫 / 4 自定义
-      backgroundType: 2,
+      backgroundType: 0,
       backgroundCustom: "",
       // 壁纸遮罩
       showBackgroundGray: true,
@@ -22,7 +22,7 @@ const useSetDataStore = defineStore("setData", {
       // 清空搜索框
       showCleanInput: true,
       // 搜索框自动 focus
-      autoFocus: false,
+      autoFocus: true,
       // 搜索后搜索框自动失焦
       autoInputBlur: true,
       // 时间样式
@@ -36,12 +36,12 @@ const useSetDataStore = defineStore("setData", {
       // 12 小时制
       use12HourFormat: false,
       // 天气显示
-      showWeather: true,
+      showWeather: false,
       // 是否显示搜索建议
       showSuggestions: true,
       // 跳转方式
       // open 新标签页 / href 当前页面
-      urlJumpType: "open",
+      urlJumpType: "href",
     };
   },
   actions: {
